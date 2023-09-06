@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  --display-font: 'Space Grotesk', sans-serif;
+  --p-font: 'Inter', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f3f3;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--display-font);
+  margin: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+  font-family: var(--p-font);
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  gap: 5rem;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.copy-text {
+  display: flex;
+  width: 70%;
+  background-color: rgb(41, 41, 63);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+}
+img {
+  border-radius: 5px;
+}

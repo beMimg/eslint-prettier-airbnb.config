@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESLint, Prettier & Airbnb</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/be7f0e2488.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <h3 class="title">ESLint, Prettier & Airbnb configuration</h3>
+      <section class="section">
+        <h4>Make sure you have JSON file on your project</h4>
+        <div class="copy-text">
+          <p class="text">npm init -y</p>
+          <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+        </div>
+      </section>
+      <section class="section">
+        <h4>Also run the following codes</h4>
+        <div class="copy-text">
+          <p class="text">
+            npm install --save-dev eslint prettier eslint-plugin-prettier
+            eslint-config-prettier eslint-plugin-node eslint-config-node
+          </p>
+          <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+        </div>
+
+        <div class="copy-text">
+          <p class="text">npx install-peerdeps --dev eslint-config-airbnb</p>
+          <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+        </div>
+      </section>
+      <section class="section">
+        <h4>Your devDependencies on package.json should now look like this:</h4>
+        <img src="img/devDependencies.png" class="img devDependencies" alt="" />
+      </section>
+      <section class="section">
+        <h4>
+          Create a new .prettierrc file - touch .prettierrc, and paste the
+          following:
+        </h4>
+
+        <div class="copy-text">
+          <p class="text">{ "singleQuote": true }</p>
+          <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+        </div>
+
+        <img src="/img//prettier.png" class="img prettier" alt="" />
+      </section>
+      <section class="section">
+        <h4>
+          If you havent installed ESLint globally, do this. If you have, dont.
+        </h4>
+        <div class="copy-text">
+          <p class="text">npm install eslint --global</p>
+          <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+        </div>
+      </section>
+      <section class="section">
+        <h4>Run this code, to create a .eslintrc file</h4>
+        <div class="copy-text">
+          <p class="text">eslint --init</p>
+          <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+        </div>
+        <h4>After running this code, answer the questions on your console.</h4>
+        <img src="/img/eslint--init.png" class="img eslint--init" alt="" />
+      </section>
+      <section class="section">
+        <h4>On .eslintrc.json, paste the following:</h4>
+        <div class="copy-text">
+          <p class="text">
+            { "extends": ["airbnb", "prettier"], "plugins": ["prettier"],
+            "rules": { "prettier/prettier": "error", "no-unused-vars": "warn" },
+            "globals": { "document": "readonly" } }
+          </p>
+          <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+        </div>
+        <img src="/img/eslintrc.png" class="img eslintrc" alt="" />
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
