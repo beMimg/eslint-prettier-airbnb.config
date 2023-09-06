@@ -1,14 +1,13 @@
 # eslint-prettier-airbnb.config
 
 ESLint, Prettier & Airbnb configuration
-Make sure you have JSON file on your project
+Make sure you have JSON file on your project:
 npm init -y
 
 
-Also run the following codes
+Also run the following codes:
+
 npm install --save-dev eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-node eslint-config-node
-
-
 npx install-peerdeps --dev eslint-config-airbnb
 
 
@@ -18,7 +17,6 @@ Your devDependencies on package.json should now look like this:
 
 Create a new .prettierrc file - touch .prettierrc, and paste the following:
 { "singleQuote": true }
-
 ![prettier](https://github.com/beMimg/eslint-prettier-airbnb.config/assets/126000960/f1eaf812-ac64-4d69-9298-f78ce4463b50)
 
 
@@ -28,7 +26,6 @@ npm install eslint --global
 
 Run this code, to create a .eslintrc file
 eslint --init
-
 
 After running this code, answer the questions on your console.
 ![eslint--init](https://github.com/beMimg/eslint-prettier-airbnb.config/assets/126000960/983c0e53-e00e-432e-a572-7cb574049559)
